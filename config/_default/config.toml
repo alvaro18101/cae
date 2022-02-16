@@ -1,4 +1,4 @@
-baseURL = "https://getdoks.org/"
+baseURL = "https://caefis.netlify.app/"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
@@ -7,7 +7,7 @@ enableGitInfo = true
 enableRobotsTXT = true
 languageCode = "en-US"
 paginate = 7
-rssLimit = 10
+rssLimit = 15
 
 # add redirects/headers
 [outputs]
@@ -56,11 +56,12 @@ rel  = "sitemap"
   contributor = "contributors"
   type = "types"
   functionality = "functionalities"
+  tag = "tags"
 
 [permalinks]
   blog = "/blog/:title/"
-  types = "/showcase/types/:title/"
-  functionalities = "/showcase/functionalities/:title/"
+  types = "/experimental/types/:title/"
+  functionalities = "/experimental/functionalities/:title/"
 
 [minify.tdewolff.html]
   keepWhitespace = false

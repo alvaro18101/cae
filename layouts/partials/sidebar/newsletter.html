@@ -1,19 +1,24 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/caefis/assets@b3238b5a074d9720435e39391241ed4cc16a1d81/newsletter.css">
 <div class="card">
-  <div class="card-bar"></div>
+  <div class="card-bar">
+</div>
   <div class="card-body">
 
-    <h3 class="h4 card-title">Stay in the loop</h3>
-    <p class="card-text">Subscribe to the Doks newsletter and get occasional updates.</p>
+    <h3 class="h4 card-title">Boletín</h3>
+    <p class="card-text">Como diría la tía Marta: "Pegale una suscribida al canal y andá contarle a tus amigas y amigos. Punto".</p>
     <form class="row gx-2 gy-3 email-form" name="newsletter" method="post" netlify-honeypot="name" data-netlify="true">
       <div class="col-md-12">
-        <input name="name" type="text" class="form-control visually-hidden" placeholder="your name" aria-label="Name">
-        <input name="email" type="email" class="form-control" placeholder="your@email.com" aria-label="Email address" required>
-        <input name="page" type="hidden" value="{{ .Page.Permalink }}">
+        <div class="col">
+          <input name="name" type="text" class="form-control" placeholder="🐧 Nombre" aria-label="Name" required>
+        </div>
+        <div class="mt-2 col">
+          <input name="email" type="email" class="form-control" placeholder="✉️ Escribe tu correo acá" aria-label="Email address" required>
+          <input name="page" type="hidden" value="{{ .Page.Permalink }}">
+        </div>
       </div>
-      <div class="col-md-4">
-        <button type="submit" class="btn btn-primary w-100" aria-label="Subscribe">Subscribe</button>
+      <div class="col-md-4 align-self-center">
+        <button type="submit" class="btn btn-primary w-100" aria-label="Subscribe">Suscribir</button>
       </div>
     </form>
-
   </div>
 </div>

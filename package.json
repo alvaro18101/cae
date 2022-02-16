@@ -1,5 +1,5 @@
 {
-  "name": "getdoks",
+  "name": "cae-package",
   "version": "0.3.6",
   "private": true,
   "browserslist": [
@@ -15,6 +15,7 @@
     "build": "exec-bin node_modules/.bin/hugo/hugo --gc --minify",
     "build:lan": "exec-bin node_modules/.bin/hugo/hugo --gc --minify --baseURL=http://192.168.1.10:8080",
     "build:preview": "npm run build -D -F",
+    "build:functions": "netlify-lambda build assets/submission-created",
     "clean": "shx rm -rf public resources",
     "clean:install": "shx rm -rf package-lock.json node_modules ",
     "lint": "npm run -s lint:scripts && npm run -s lint:styles && npm run -s lint:markdown",

@@ -8,7 +8,7 @@ draft: true
 images: []
 link: ""
 menu:
-  showcase:
+  experimental:
     parent: "browse"
 weight: 999
 toc: false

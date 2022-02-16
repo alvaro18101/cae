@@ -1,29 +1,29 @@
 # Meta Data for SEO
 
 ## Homepage
-title = "Doks"
+title = "CAE"
 titleSeparator = "-"
-titleAddition = "Modern Documentation Theme"
-description = "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
+titleAddition = "Centro de Apoyo Estudiantil"
+description = "Facilitando recursos para el estudio de la física."
 
 ## Open Graph
 images = ["doks.png"]
 ogLocale = "en_US"
-domainTLD = "getdoks.org"
-titleHome = "Doks Theme"
+domainTLD = "caefis.netlify.app"
+titleHome = "CAE Theme"
 
 ## Twitter Cards
-twitterSite = "@getdoks"
-twitterCreator = "@henkverlinde"
+twitterSite = "@cae_fisica"
+twitterCreator = "@totallynotdavid"
 
 ## JSON-LD
 # schemaType = "Person"
 schemaType = "Organization"
-schemaName = "Doks"
-schemaAuthor = "Henk Verlinde"
-schemaAuthorTwitter = "https://twitter.com/henkverlinde"
-schemaAuthorLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
-schemaAuthorGitHub = "https://github.com/h-enk"
+schemaName = "CAE"
+schemaAuthor = "David"
+schemaAuthorTwitter = "https://twitter.com/totallynotdavid"
+schemaAuthorLinkedIn = ""
+schemaAuthorGitHub = "https://github.com/totallynotdavid"
 schemaLocale = "en-US"
 schemaLogo = "logo-doks.png"
 schemaLogoWidth = 512
@@ -31,9 +31,9 @@ schemaLogoHeight = 512
 schemaImage = "doks.png"
 schemaImageWidth = 1280
 schemaImageHeight = 640
-schemaTwitter = "https://twitter.com/getdoks"
+schemaTwitter = "https://twitter.com/cae_fisica"
 schemaLinkedIn = ""
-schemaGitHub = "https://github.com/h-enk/doks"
+schemaGitHub = ""
 schemaSection = "blog"
 
 ## Sitelinks Search Box
@@ -51,21 +51,21 @@ lqipWidth = "20x"
 smallLimit = "360"
 
 # Footer
-footer = "Powered by <a class=\"text-muted\" href=\"https://www.netlify.com/\">Netlify</a>, <a class=\"text-muted\" href=\"https://gohugo.io/\">Hugo</a>, and <a class=\"text-muted\" href=\"https://getdoks.org/\">Doks</a>"
+footer = "Un proyecto del Centro de Apoyo Estudiantil"
 
 # Feed
-copyRight = "Copyright (c) 2020-2022 Henk Verlinde"
+copyRight = "Copyright (c) 2022 — CAE"
 
 
 # Alert
 alert = false
-alertDismissable = true
-# alertText = "Help Doks grow by supporting us on Open Collective. <a class=\"alert-link stretched-link\" href=\"https://opencollective.com/doks\" target=\"_blank\" rel=\"noopener\">Become a backer!</a>"
-# alertText = "Better UX navigation, multilingual and i18n support, and more. <a class=\"alert-link stretched-link\" href=\"/blog/doks-v0.3/\">Check out what's new!</a>"
-alertText = "What Doks future features are important to you? <a class=\"alert-link stretched-link\" href=\"https://docs.google.com/forms/d/e/1FAIpQLSe0DItAFv2cNSC0S_L6DQBw9ofB0ogYvZqeoWHHRX-Aal-5zQ/viewform?usp=sf_link\" target=\"_blank\" rel=\"noopener\">Take the 2021 Doks Survey</a>"
+alertDismissable = false
+# alertText = ""
+# alertText = ""
+alertText = ""
 
 # Edit Page
-docsRepo = "https://github.com/h-enk/getdoks.org"
+docsRepo = "https://github.com/caefis/caefis.github.io"
 editPage = true
 
 [options]
@@ -75,8 +75,8 @@ editPage = true
   darkMode = true
   bootStrapJs = true
   highLight = true
-  multilingualMode = false # Not yet functional
-  docsVersioning = false # Not yet functional
+  multilingualMode = false #
+  docsVersioning = false #
 
 [menu]
   [menu.section]

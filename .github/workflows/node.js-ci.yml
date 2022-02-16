@@ -1,4 +1,4 @@
-name: Hyas CI
+name: Momobot CI
 
 on:
   push:
