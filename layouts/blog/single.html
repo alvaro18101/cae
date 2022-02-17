@@ -28,21 +28,8 @@
 				</nav>
 			{{ end }}
 			<h1>{{ .Title }}</h1>
-                        <div class="date">
-                          {{ $dateFormat := $.Site.Params.dateFormat | default "02/01/2006" }}
-                          {{ $publishDate := .PublishDate }}
-						  <small>
-                          Publicado el {{ T "publish_date" }} {{ $publishDate.Format $dateFormat }}.
-                          {{ with .Lastmod }}
-                            {{ if gt . $publishDate }}
-						  </br>
-                              Editado el {{ T "last_updated" }} {{ .Format $dateFormat }}.
-						</small>
-                            <br>
-                             </p>
-                            {{ end }}
-                          {{ end }}
-                        </div>
+			{{ partial "main/blog-meta.html" . }}
+
 			<p class="lead">{{ .Params.lead | safeHTML }}</p>
 			{{ partial "main/headline-hash.html" .Content }}
 			{{ if .Site.Params.editPage -}}

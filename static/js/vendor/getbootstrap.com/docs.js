@@ -504,7 +504,7 @@ function() {
         indexName: 'caefis.netlify.app',
         inputSelector: '#search-input',
         algoliaOptions: {
-            facetFilters: ['version:' + b]
+            facetFilters: [is_active=1]
         },
         transformData: function(a) {
             return a.map(function(a) {

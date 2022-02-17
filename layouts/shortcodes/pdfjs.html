@@ -6,15 +6,19 @@
 {{ $pdf_url :=  path.Join .Page.Dir $pdf_file }}
 {{ $pdf_url := $pdf_url | absURL }}
 <div class="pdf">
-<div class="pdf-paginator" id="paginator_{{- $pdf_id -}}">
+<div class="pdf-paginator d-flex justify-content-center align-items-center" id="paginator_{{- $pdf_id -}}">
     <button class="btn btn-primary" id="prev_{{- $pdf_id -}}">Anterior</button>
-    &nbsp;
+    &nbsp;&nbsp;
     <span>Página: <span id="page_num_{{- $pdf_id -}}"></span> / <span id="page_count_{{- $pdf_id -}}"></span></span>
-    &nbsp;
+    &nbsp;&nbsp;
     <button class="btn btn-primary" id="next_{{- $pdf_id -}}">Siguiente</button>
+    &nbsp;&nbsp;&nbsp;&nbsp;
     <a href="{{ $pdf_url }}" target="_blank"><button class="btn btn-secondary" id="next_{{- $pdf_id -}}">Descargar</button></a>
 </div>
-<div id="embed-pdf-container_{{- $pdf_id -}}">
+<div style="line-height:100%;">
+  <br>
+</div>
+<div id="embed-pdf-container_{{- $pdf_id -}}" style="text-align:center">
     <canvas class="pdf-canvas" id="the-canvas_{{- $pdf_id -}}"></canvas>
 </div>
 </div>
