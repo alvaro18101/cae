@@ -501,7 +501,7 @@ function() {
         b.ctrlKey && b.key === '/' && (b.preventDefault(), a.focus())
     }), window.docsearch({
         apiKey: '89f91b80c77205fbd14f6c09e03bc816',
-        indexName: 'bootstrap',
+        indexName: 'caefis.netlify.app',
         inputSelector: '#search-input',
         algoliaOptions: {
             facetFilters: ['version:' + b]

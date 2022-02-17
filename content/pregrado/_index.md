@@ -11,6 +11,7 @@ lastmod:
 draft: false
 images: []
 alias: ["/pregrado/introduccion"]
+math: true
 ---
 
 ### ¿Qué encontrarás en esta página web?
