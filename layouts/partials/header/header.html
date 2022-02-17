@@ -90,7 +90,7 @@
   </nav>
 </header>
 
-{{ if eq .Section "docs" -}}
+{{ if eq .Section "pregrado" -}}
 <nav class="doks-subnavbar py-2 sticky-lg-top" aria-label="Secondary navigation">
   <div class="container-xxl d-flex align-items-md-center">
 
@@ -113,7 +113,7 @@
     {{ if eq .Site.Params.options.docsVersioning true -}}
     <div class="dropdown ms-3">
       <button class="btn btn-doks-light dropdown-toggle" id="doks-versions" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static" aria-label="Toggle version menu">
-        <span class="d-none d-lg-inline">Doks</span> v5.0
+        <span class="d-none d-lg-inline">CAE</span> v5.0
       </button>
       <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="doks-versions">
         <li><a class="dropdown-item current" aria-current="true" href="/docs/5.0/">Latest (5.0.x)</a></li>
@@ -126,7 +126,7 @@
       </ul>
     </div>
     {{ else -}}
-      <span class="navbar-text fs-6 d-none d-sm-block">v{{ $data := getJSON "https://raw.githubusercontent.com/h-enk/doks/master/package.json" }}{{ $data.version }}</span>
+      <span class="navbar-text fs-6 d-none d-sm-block">Versión 0.1</span>
     {{ end -}}
 
     <button class="btn doks-sidebar-toggle d-lg-none ms-3 order-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#doks-docs-nav" aria-controls="doks-docs-nav" aria-expanded="false" aria-label="Toggle documentation navigation">
@@ -173,7 +173,7 @@
 </div>
 {{ end -}}
 
-{{ if or (eq .Section "showcase") (eq .Data.Singular .Kind "type") (eq .Data.Singular .Kind "functionality") -}}
+{{ if or (eq .Section "experimental") (eq .Data.Singular .Kind "type") (eq .Data.Singular .Kind "functionality") -}}
 <nav class="doks-subnavbar py-2 sticky-lg-top" aria-label="Secondary navigation">
   <div class="container-xxl d-flex align-items-md-center">
 

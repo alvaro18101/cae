@@ -500,7 +500,7 @@ function() {
     b = a.getAttribute('data-bd-docs-version'), document.addEventListener('keydown', function(b) {
         b.ctrlKey && b.key === '/' && (b.preventDefault(), a.focus())
     }), window.docsearch({
-        apiKey: '5990ad008512000bba2cf951ccf0332f',
+        apiKey: '89f91b80c77205fbd14f6c09e03bc816',
         indexName: 'bootstrap',
         inputSelector: '#search-input',
         algoliaOptions: {

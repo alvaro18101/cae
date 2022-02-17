@@ -19,7 +19,7 @@
 				<span class="fw-bold">{{ .Title }}</span>
 				<span>
 					{{ if .Params.types -}}
-						<small class="types-single">{{ range $index, $type := .Params.types }}{{ if gt $index 0 }}, {{ end }}<a href="{{ "/showcase/types/" | relURL }}{{ . | urlize }}/">{{ . | title }}</a>{{ end -}}</small>
+						<small class="types-single">{{ range $index, $type := .Params.types }}{{ if gt $index 0 }}, {{ end }}<a href="{{ "/experimental/types/" | relURL }}{{ . | urlize }}/">{{ . | title }}</a>{{ end -}}</small>
 					{{ end -}}
 					<a class="view-website" href="{{ .Params.link }}" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></a>
 				</span>
