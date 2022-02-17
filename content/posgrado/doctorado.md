@@ -13,7 +13,7 @@ images: []
 menu:
   posgrado:
       parent: "research"
-weight: 10
+weight: 20
 toc: true
 ---
 

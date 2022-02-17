@@ -9,7 +9,7 @@ images: []
 menu: 
   posgrado:
     parent: "research"
-weight: 20
+weight: 10
 toc: true
 ---
 
